@@ -11,12 +11,14 @@ body {
     background-color: #fdfffc;
 }
 
-header {
-
-}
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Changa One", sans-serif;
+    font-weight: 400;
 }
 h1 {
     font-size: 2rem;
@@ -30,6 +32,27 @@ h2 {
 p {
     line-height: 1.5;
 }
+/********************************
+
+        EN-TETE DE PAGE
+
+********************************/
+header {
+    text-align: center;
+    background-color: #011627;
+    padding-top: 5px;
+    margin-bottom: 30px;
+}
+
+.nom-prenom,
+.metier {
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+}
+.nom-prenom {
+    font-size: 1.75rem;
+}
+
 /********************************
 
          PAGE ACCUEIL
@@ -54,7 +77,11 @@ p {
 
 
 
-/*police du site*/
+/********************************
+
+             FONTS
+
+********************************/
 
 /* changa-one-regular - latin */
 @font-face {
