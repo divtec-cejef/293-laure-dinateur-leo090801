@@ -43,12 +43,32 @@ header {
     padding-top: 5px;
     margin-bottom: 30px;
 }
-
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+nav ul {
+    padding: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+nav li {
+    list-style: none;
+    display:inline-block;
+    padding: 0;
+}
+nav a {
+    font-family: "Changa One", sans-serif;
+    padding: 15px 10px;
+}
+nav a:hover {
+    color: #2ec4b6;
+}
 .nom-prenom,
 .metier {
     font-family: "Changa One", sans-serif;
     font-weight: 400;
-    margin-top: -5px;
 }
 .nom-prenom {
     font-size: 1.75rem;
@@ -56,7 +76,19 @@ header {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.metier {
+    margin-top: -5px;
+}
+@media screen and (max-width: 600px) {
+    nav li:first-child {
+        display: none;
+    }
+}
+/********************************
 
+
+
+********************************/
 /********************************
 
          PAGE ACCUEIL
@@ -104,3 +136,4 @@ header {
     font-weight: 400;
     src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
