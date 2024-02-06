@@ -32,6 +32,9 @@ h2 {
 p {
     line-height: 1.5;
 }
+a {
+    text-decoration: none;
+}
 /********************************
 
         EN-TETE DE PAGE
@@ -42,9 +45,6 @@ header {
     background-color: #011627;
     padding-top: 5px;
     margin: -8px -8px 30px;
-}
-header a {
-    text-decoration: none;
 }
 nav {
     padding-top: 10px;
@@ -87,11 +87,6 @@ nav a:hover {
     font-weight: 400;
     color: #e71d36;
 }
-@media screen and (max-width: 600px) {
-    header li:first-child {
-        display: none;
-    }
-}
 /********************************
 
       Contenu principal
@@ -100,6 +95,9 @@ nav a:hover {
 main {
     margin-right: 5%;
     margin-left: 5%;
+}
+main a {
+    color: #e71d36;
 }
 /********************************
 
