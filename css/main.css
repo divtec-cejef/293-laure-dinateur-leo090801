@@ -41,7 +41,10 @@ header {
     text-align: center;
     background-color: #011627;
     padding-top: 5px;
-    margin-bottom: 30px;
+    margin: -8px -8px 30px;
+}
+header a {
+    text-decoration: none;
 }
 nav {
     padding-top: 10px;
@@ -55,12 +58,13 @@ nav ul {
 }
 nav li {
     list-style: none;
-    display:inline-block;
+    display: inline-block;
     padding: 0;
 }
 nav a {
     font-family: "Changa One", sans-serif;
     padding: 15px 10px;
+    color: #fdfffc;
 }
 nav a:hover {
     color: #2ec4b6;
@@ -78,9 +82,12 @@ nav a:hover {
 }
 .metier {
     margin-top: -5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #e71d36;
 }
 @media screen and (max-width: 600px) {
-    nav li:first-child {
+    header li:first-child {
         display: none;
     }
 }
@@ -99,10 +106,20 @@ main {
 
 ********************************/
 footer {
-
+    padding-top: 50px;
+    text-align: center;
 }
-
-
+footer img {
+    width: 50px;
+    filter: grayscale(1);
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: -30px;
+}
+footer img:hover {
+    filter: grayscale(0);
+    transition: filter 500ms linear;
+}
 /********************************
 
          PAGE ACCUEIL
@@ -116,8 +133,17 @@ footer {
          PAGE INFOS
 
 ********************************/
-
-
+.page-infos main img {
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 150px;
+}
+.page-infos h1,
+.page-infos h2 {
+    text-align: center;
+}
 /********************************
 
          PAGE CONTACT
